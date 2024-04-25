@@ -1,0 +1,100 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(images/bitmap.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 223px;
+}
+
+nav > ul
+{
+    list-style-type: none;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav > ul > li > a
+{
+    text-decoration: none;
+    text-align: center;
+    color: #e7e7e7;
+    display: block;
+    padding: 20px;
+}
+
+#nav-bar
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333333;
+    display: block;
+}
+
+#logo
+{
+    display: flex;
+    float: left;
+}
+
+.nav-right
+{
+    float: right;
+}
+
+.nav-right > a:hover
+{
+    background-color: #e7e7e7;
+    color: #333333;
+    transition: 0.3s ease;
+}
+
+#input-box
+{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+}
+
+#output-box
+{
+    float: right;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+}
+
+.input-output
+{
+    display: block;
+    margin-top: 175px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    align-items: center;
+}
+
+#submit-button
+{
+    margin-left: 20px;
+    padding: 10px 40px;
+    border-radius: 40px;
+    border: #333333 solid 1px;
+    background-color: #333333;
+    color: #e7e7e7;
+}
+
+#submit-button:hover
+{
+    background-color: rgb(75, 255, 75);
+    border: rgb(75, 255, 75) solid 1px;
+    color: black;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
