@@ -1,16 +1,24 @@
 function rot13()
 {
-    let dict_1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'];
-    let dict_2 = ['n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
     let textBox = document.getElementById("input-box");
     let data = textBox.value;
 
-    document.getElementById("output-box").value = encryptAndDecrytp(data, dict_1, dict_2);
+    document.getElementById("output-box").value = encryptAndDecrypt(data);
 }
 
-function encryptAndDecrytp(text, listOne, listTwo)
+function changeText(id)
 {
+    data = document.getElementById(`${id}`).innerHTML
+    document.getElementById(id).innerHTML = encryptAndDecrypt(data);
+}
+
+function encryptAndDecrypt(text)
+{
+
+    let listOne = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'];
+    let listTwo = ['n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
     text = text.split("");
     
     for(let i = 0; i < text.length; i++)
